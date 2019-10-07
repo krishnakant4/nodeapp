@@ -27,8 +27,8 @@ router.route('/')
   })
   .post(function (req, res, next) {
     const post = new Post({
-      title: req.body.title,
-      description: req.body.description
+      title: "Hello",
+      description: "Data Uploaded Sucessfully"
     })
     post.save()
       .then(data => {
